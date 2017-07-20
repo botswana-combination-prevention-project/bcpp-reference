@@ -16,6 +16,7 @@ configs = {
         'result_date', 'result_recorded', 'result_doc_type'],
     'bcpp_subject.circumcision': ['circumcised'],
     'bcpp_subject.hicenrollment': ['hic_permission'],
+    'bcpp_subject.sexualbehaviour': ['last_year_partners']
 }
 for model, fields in configs.items():
     site_reference_configs.add_fields_to_config(
