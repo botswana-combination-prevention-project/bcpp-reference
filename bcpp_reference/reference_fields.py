@@ -14,6 +14,8 @@ configs = {
     'bcpp_subject.hivtestreview': ['hiv_test_date', 'recorded_hiv_result'],
     'bcpp_subject.hivresultdocumentation': [
         'result_date', 'result_recorded', 'result_doc_type'],
+    'bcpp_subject.circumcision': ['circumcised'],
+    'bcpp_subject.hicenrollment': ['hic_permission'],
 }
 for model, fields in configs.items():
     site_reference_configs.add_fields_to_config(
