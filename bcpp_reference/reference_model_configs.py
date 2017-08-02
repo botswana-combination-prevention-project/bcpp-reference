@@ -5,9 +5,9 @@ site_reference_configs.register_from_visit_schedule(
     site_visit_schedules=site_visit_schedules)
 
 configs = {
-    'bcpp_subject.HivResult': ['hiv_result', 'hiv_result_datetime'],
-    'bcpp_subject.HivCareAdherence': ['arv_evidence', 'ever_taken_arv', 'on_arv'],
-    'bcpp_subject.ElisaHivResult': ['hiv_result', 'hiv_result_datetime'],
+    'bcpp_subject.hivresult': ['hiv_result', 'hiv_result_datetime'],
+    'bcpp_subject.hivcareadherence': ['arv_evidence', 'ever_taken_arv', 'on_arv'],
+    'bcpp_subject.elisahivresult': ['hiv_result', 'hiv_result_datetime'],
     'bcpp_subject.hivtestinghistory': [
         'verbal_hiv_result', 'other_record', 'has_tested', 'has_record'],
     'bcpp_subject.hivtestreview': ['hiv_test_date', 'recorded_hiv_result'],
