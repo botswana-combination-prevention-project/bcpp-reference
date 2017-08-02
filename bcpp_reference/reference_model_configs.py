@@ -17,7 +17,6 @@ configs = {
     'bcpp_subject.hicenrollment': ['hic_permission'],
     'bcpp_subject.sexualbehaviour': ['last_year_partners'],
     'bcpp_subject.subjectvisit': ['survey_schedule', 'survey'],
-    'bcpp_subject.immigrationstatus': ['report_datetime']
 }
 for model, fields in configs.items():
     site_reference_configs.add_fields_to_config(
