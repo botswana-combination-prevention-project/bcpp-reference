@@ -10,6 +10,7 @@ from .reference_config_helper import ReferenceConfigHelper
 from dateutil.relativedelta import relativedelta
 from edc_base.utils import get_utcnow
 from pprint import pprint
+from edc_reference.site import site_reference_configs
 
 
 class TestReference(TestCase):
@@ -29,8 +30,8 @@ class TestReference(TestCase):
             survey_schedule='survey_schedule',
             survey='survey')
 
-#     def test_(self):
-#         pprint(site_reference_configs.registry)
+    def test_(self):
+        pprint(site_reference_configs.registry)
 
     def test_subject_visit(self):
         values = []
