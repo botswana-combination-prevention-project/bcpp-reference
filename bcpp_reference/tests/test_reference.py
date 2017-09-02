@@ -1,16 +1,14 @@
-# from edc_reference.site import site_reference_configs
-# from pprint import pprint
 from bcpp_reference.tests.models import HivResult, SubjectVisit
+from dateutil.relativedelta import relativedelta
 from django.test import TestCase, tag
+from edc_base.utils import get_utcnow
 from edc_constants.constants import POS
 from edc_reference.models import Reference
+from edc_reference.site import site_reference_configs
 from edc_reference.tests import ReferenceTestHelper
+from pprint import pprint
 
 from .reference_config_helper import ReferenceConfigHelper
-from dateutil.relativedelta import relativedelta
-from edc_base.utils import get_utcnow
-from pprint import pprint
-from edc_reference.site import site_reference_configs
 
 
 class TestReference(TestCase):
