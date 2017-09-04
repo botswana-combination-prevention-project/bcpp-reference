@@ -118,6 +118,7 @@ class HivCareAdherence(CrfModelMixin, BaseUuidModel):
     arv_evidence = models.CharField(max_length=25, default=YES)
     ever_taken_arv = models.CharField(max_length=25, default=YES)
     on_arv = models.CharField(max_length=25, default=YES)
+    medical_care = models.CharField(max_length=25, default=YES)
 
 
 class HivTestingHistory(CrfModelMixin, BaseUuidModel):
