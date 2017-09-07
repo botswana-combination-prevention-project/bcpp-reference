@@ -2,9 +2,6 @@ from edc_reference import site_reference_configs, ReferenceModelConfig
 from edc_visit_schedule.site_visit_schedules import site_visit_schedules
 
 reference = ReferenceModelConfig(
-    model='bcpp_subject.subjectconsent', fields=['consent_datetime'])
-site_reference_configs.register(reference)
-reference = ReferenceModelConfig(
     model='bcpp_subject.anonymousconsent', fields=['consent_datetime'])
 site_reference_configs.register(reference)
 
