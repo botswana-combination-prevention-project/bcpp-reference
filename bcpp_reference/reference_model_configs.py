@@ -2,7 +2,7 @@ from edc_reference import site_reference_configs, ReferenceModelConfig
 from edc_visit_schedule.site_visit_schedules import site_visit_schedules
 
 reference = ReferenceModelConfig(
-    model='bcpp_subject.anonymousconsent', fields=['consent_datetime'])
+    name='bcpp_subject.anonymousconsent', fields=['consent_datetime'])
 site_reference_configs.register(reference)
 
 
@@ -24,9 +24,9 @@ configs = {
     'bcpp_subject.sexualbehaviour': ['last_year_partners', 'ever_sex'],
     'bcpp_subject.subjectvisit': ['survey_schedule', 'survey'],
 }
-for model, fields in configs.items():
+for reference_name, fields in configs.items():
     site_reference_configs.add_fields_to_config(
-        model, fields)
+        name=reference_name, fields=fields)
 
 # uncomment to view registered models and their field list
 # from pprint import pprint
