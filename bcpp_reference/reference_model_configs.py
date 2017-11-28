@@ -19,6 +19,7 @@ configs = {
     'bcpp_subject.hivtestinghistory': ['verbal_hiv_result', 'other_record', 'has_tested', 'has_record'],
     'bcpp_subject.hivtestreview': ['hiv_test_date', 'recorded_hiv_result'],
     'bcpp_subject.medicaldiagnoses': ['cancer_record', 'heart_attack_record', 'tb_record'],
+    #     'bcpp_subject.outpatientcare': ['govt_health_care'],
     'bcpp_subject.reproductivehealth': ['currently_pregnant', 'menopause'],
     'bcpp_subject.resourceutilization': ['out_patient', 'hospitalized'],
     'bcpp_subject.sexualbehaviour': ['last_year_partners', 'ever_sex'],
